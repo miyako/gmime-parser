@@ -1,9 +1,6 @@
 #ifndef __MIME_PARSER_H__
 #define __MIME_PARSER_H__
 
-#include "gmime/gmime.h"
-#include "gmime/gmime-parser.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
@@ -22,6 +19,20 @@ struct Document {
     std::string from;
 };
 
+#ifdef _WIN32
+#define NOMINMAX
+#define _SSIZE_T_DEFINED 1
+#include <Windows.h>
+#define snprintf _snprintf
+#define vsnprintf _vsnprintf
+#define strcasecmp _stricmp
+#define strncasecmp _strnicmp
+#define ssize_t __int64
+#endif
+
+#include "gmime/gmime.h"
+#include "gmime/gmime-parser.h"
+
 #include <tidy.h>
 #include <tidybuffio.h>
 
@@ -32,12 +43,6 @@ typedef struct
     Document *document;
 }mime_ctx;
 
-#ifdef _WIN32
-#define NOMINMAX
-#define _SSIZE_T_DEFINED 1
-#include <Windows.h>
-#define ssize_t __int64
-#endif
 
 #define BUFLEN 4096
 
