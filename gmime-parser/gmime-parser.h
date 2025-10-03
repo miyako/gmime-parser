@@ -13,6 +13,7 @@
 #include <Windows.h>
 #endif
 
+#include "gmime/gmime.h"
 #include <json/json.h>
 #include <sstream>
 #include <iostream>
@@ -32,15 +33,6 @@
 #define _rb L"rb"
 #define _wb L"wb"
 #endif
-
-typedef enum {
-    
-    document_type_docx = 0,
-    document_type_xlsx,
-    document_type_pptx,
-    document_type_unknown = -1
-    
-}document_type;
 
 #ifdef __GNUC__
 #define OPTARG_T char*

@@ -7,7 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D15189F82E8D6D1B002D38DC /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D15189F72E8D6D1B002D38DC /* libjsoncpp.a */; };
+		D114A8122E8FDCBB003242DC /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D15189F72E8D6D1B002D38DC /* libjsoncpp.a */; };
+		D11BC5932E8FDFC400FF8114 /* libidn2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5822E8FDFC400FF8114 /* libidn2.a */; };
+		D11BC5942E8FDFC400FF8114 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5832E8FDFC400FF8114 /* libidn.a */; };
+		D11BC5952E8FDFC400FF8114 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5842E8FDFC400FF8114 /* libintl.a */; };
+		D11BC5962E8FDFC400FF8114 /* libgmime-3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5852E8FDFC400FF8114 /* libgmime-3.0.a */; };
+		D11BC5972E8FDFC400FF8114 /* libassuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5862E8FDFC400FF8114 /* libassuan.a */; };
+		D11BC5982E8FDFC400FF8114 /* libgpg-error.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5872E8FDFC400FF8114 /* libgpg-error.a */; };
+		D11BC5992E8FDFC400FF8114 /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5882E8FDFC400FF8114 /* libgobject-2.0.a */; };
+		D11BC59A2E8FDFC400FF8114 /* libunistring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5892E8FDFC400FF8114 /* libunistring.a */; };
+		D11BC59B2E8FDFC400FF8114 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC58A2E8FDFC400FF8114 /* libz.a */; };
+		D11BC59C2E8FDFC400FF8114 /* libgio-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC58B2E8FDFC400FF8114 /* libgio-2.0.a */; };
+		D11BC59D2E8FDFC400FF8114 /* libgthread-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC58C2E8FDFC400FF8114 /* libgthread-2.0.a */; };
+		D11BC59E2E8FDFC400FF8114 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC58D2E8FDFC400FF8114 /* libffi.a */; };
+		D11BC59F2E8FDFC400FF8114 /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC58E2E8FDFC400FF8114 /* libglib-2.0.a */; };
+		D11BC5A02E8FDFC400FF8114 /* libiconv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC58F2E8FDFC400FF8114 /* libiconv.a */; };
+		D11BC5A12E8FDFC400FF8114 /* libgpgme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5902E8FDFC400FF8114 /* libgpgme.a */; };
+		D11BC5A22E8FDFC400FF8114 /* libgmodule-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5912E8FDFC400FF8114 /* libgmodule-2.0.a */; };
+		D11BC5A32E8FDFC400FF8114 /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5922E8FDFC400FF8114 /* libjson.a */; };
+		D11BC5A52E8FDFFF00FF8114 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5A42E8FDFFF00FF8114 /* Cocoa.framework */; };
+		D11BC5A72E8FE00C00FF8114 /* libpcre.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5A62E8FE00C00FF8114 /* libpcre.tbd */; };
+		D11BC5A92E8FE01100FF8114 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D11BC5A82E8FE01100FF8114 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +43,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D114A8132E8FDCC5003242DC /* a */ = {isa = PBXFileReference; lastKnownFileType = folder; path = a; sourceTree = "<group>"; };
+		D11BC5822E8FDFC400FF8114 /* libidn2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidn2.a; path = a/libidn2.a; sourceTree = "<group>"; };
+		D11BC5832E8FDFC400FF8114 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidn.a; path = a/libidn.a; sourceTree = "<group>"; };
+		D11BC5842E8FDFC400FF8114 /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libintl.a; path = a/libintl.a; sourceTree = "<group>"; };
+		D11BC5852E8FDFC400FF8114 /* libgmime-3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgmime-3.0.a"; path = "a/libgmime-3.0.a"; sourceTree = "<group>"; };
+		D11BC5862E8FDFC400FF8114 /* libassuan.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libassuan.a; path = a/libassuan.a; sourceTree = "<group>"; };
+		D11BC5872E8FDFC400FF8114 /* libgpg-error.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgpg-error.a"; path = "a/libgpg-error.a"; sourceTree = "<group>"; };
+		D11BC5882E8FDFC400FF8114 /* libgobject-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgobject-2.0.a"; path = "a/libgobject-2.0.a"; sourceTree = "<group>"; };
+		D11BC5892E8FDFC400FF8114 /* libunistring.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libunistring.a; path = a/libunistring.a; sourceTree = "<group>"; };
+		D11BC58A2E8FDFC400FF8114 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = a/libz.a; sourceTree = "<group>"; };
+		D11BC58B2E8FDFC400FF8114 /* libgio-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgio-2.0.a"; path = "a/libgio-2.0.a"; sourceTree = "<group>"; };
+		D11BC58C2E8FDFC400FF8114 /* libgthread-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgthread-2.0.a"; path = "a/libgthread-2.0.a"; sourceTree = "<group>"; };
+		D11BC58D2E8FDFC400FF8114 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = a/libffi.a; sourceTree = "<group>"; };
+		D11BC58E2E8FDFC400FF8114 /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libglib-2.0.a"; path = "a/libglib-2.0.a"; sourceTree = "<group>"; };
+		D11BC58F2E8FDFC400FF8114 /* libiconv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiconv.a; path = a/libiconv.a; sourceTree = "<group>"; };
+		D11BC5902E8FDFC400FF8114 /* libgpgme.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgpgme.a; path = a/libgpgme.a; sourceTree = "<group>"; };
+		D11BC5912E8FDFC400FF8114 /* libgmodule-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgmodule-2.0.a"; path = "a/libgmodule-2.0.a"; sourceTree = "<group>"; };
+		D11BC5922E8FDFC400FF8114 /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson.a; path = a/libjson.a; sourceTree = "<group>"; };
+		D11BC5A42E8FDFFF00FF8114 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D11BC5A62E8FE00C00FF8114 /* libpcre.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpcre.tbd; path = usr/lib/libpcre.tbd; sourceTree = SDKROOT; };
+		D11BC5A82E8FE01100FF8114 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		D15189F72E8D6D1B002D38DC /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsoncpp.a; path = a/libjsoncpp.a; sourceTree = "<group>"; };
 		D16478942E611F7700FC9914 /* gmime-parser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gmime-parser"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D164789E2E61216B00FC9914 /* gmime-config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "gmime-config.xcconfig"; sourceTree = "<group>"; };
@@ -44,7 +85,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15189F82E8D6D1B002D38DC /* libjsoncpp.a in Frameworks */,
+				D11BC5A92E8FE01100FF8114 /* libresolv.tbd in Frameworks */,
+				D11BC5A72E8FE00C00FF8114 /* libpcre.tbd in Frameworks */,
+				D11BC5A52E8FDFFF00FF8114 /* Cocoa.framework in Frameworks */,
+				D11BC5932E8FDFC400FF8114 /* libidn2.a in Frameworks */,
+				D11BC5942E8FDFC400FF8114 /* libidn.a in Frameworks */,
+				D11BC5952E8FDFC400FF8114 /* libintl.a in Frameworks */,
+				D11BC5962E8FDFC400FF8114 /* libgmime-3.0.a in Frameworks */,
+				D11BC5972E8FDFC400FF8114 /* libassuan.a in Frameworks */,
+				D11BC5982E8FDFC400FF8114 /* libgpg-error.a in Frameworks */,
+				D11BC5992E8FDFC400FF8114 /* libgobject-2.0.a in Frameworks */,
+				D11BC59A2E8FDFC400FF8114 /* libunistring.a in Frameworks */,
+				D11BC59B2E8FDFC400FF8114 /* libz.a in Frameworks */,
+				D11BC59C2E8FDFC400FF8114 /* libgio-2.0.a in Frameworks */,
+				D11BC59D2E8FDFC400FF8114 /* libgthread-2.0.a in Frameworks */,
+				D11BC59E2E8FDFC400FF8114 /* libffi.a in Frameworks */,
+				D11BC59F2E8FDFC400FF8114 /* libglib-2.0.a in Frameworks */,
+				D11BC5A02E8FDFC400FF8114 /* libiconv.a in Frameworks */,
+				D11BC5A12E8FDFC400FF8114 /* libgpgme.a in Frameworks */,
+				D11BC5A22E8FDFC400FF8114 /* libgmodule-2.0.a in Frameworks */,
+				D11BC5A32E8FDFC400FF8114 /* libjson.a in Frameworks */,
+				D114A8122E8FDCBB003242DC /* libjsoncpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +115,27 @@
 		D157F30B2E612DD500DF46D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D11BC5A82E8FE01100FF8114 /* libresolv.tbd */,
+				D11BC5A62E8FE00C00FF8114 /* libpcre.tbd */,
+				D11BC5A42E8FDFFF00FF8114 /* Cocoa.framework */,
+				D11BC5862E8FDFC400FF8114 /* libassuan.a */,
+				D11BC58D2E8FDFC400FF8114 /* libffi.a */,
+				D11BC58B2E8FDFC400FF8114 /* libgio-2.0.a */,
+				D11BC58E2E8FDFC400FF8114 /* libglib-2.0.a */,
+				D11BC5852E8FDFC400FF8114 /* libgmime-3.0.a */,
+				D11BC5912E8FDFC400FF8114 /* libgmodule-2.0.a */,
+				D11BC5882E8FDFC400FF8114 /* libgobject-2.0.a */,
+				D11BC5872E8FDFC400FF8114 /* libgpg-error.a */,
+				D11BC5902E8FDFC400FF8114 /* libgpgme.a */,
+				D11BC58C2E8FDFC400FF8114 /* libgthread-2.0.a */,
+				D11BC58F2E8FDFC400FF8114 /* libiconv.a */,
+				D11BC5832E8FDFC400FF8114 /* libidn.a */,
+				D11BC5822E8FDFC400FF8114 /* libidn2.a */,
+				D11BC5842E8FDFC400FF8114 /* libintl.a */,
+				D11BC5922E8FDFC400FF8114 /* libjson.a */,
+				D11BC5892E8FDFC400FF8114 /* libunistring.a */,
+				D11BC58A2E8FDFC400FF8114 /* libz.a */,
+				D114A8132E8FDCC5003242DC /* a */,
 				D15189F72E8D6D1B002D38DC /* libjsoncpp.a */,
 			);
 			name = Frameworks;
@@ -207,6 +289,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SYMROOT = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "include/**";
+				USER_HEADER_SEARCH_PATHS = "include/**";
 			};
 			name = Debug;
 		};
@@ -264,6 +348,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SYMROOT = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "include/**";
+				USER_HEADER_SEARCH_PATHS = "include/**";
 			};
 			name = Release;
 		};
@@ -281,7 +367,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = include;
+				SYSTEM_HEADER_SEARCH_PATHS = "include/**";
+				USER_HEADER_SEARCH_PATHS = "include/**";
 			};
 			name = Debug;
 		};
@@ -299,7 +386,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = include;
+				SYSTEM_HEADER_SEARCH_PATHS = "include/**";
+				USER_HEADER_SEARCH_PATHS = "include/**";
 			};
 			name = Release;
 		};

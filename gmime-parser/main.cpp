@@ -98,7 +98,7 @@ int main(int argc, OPTARG_T argv[]) {
     const OPTARG_T input_path  = NULL;
     const OPTARG_T output_path = NULL;
     
-    std::vector<uint8_t>txt_data(0);
+    std::vector<uint8_t>eml_data(0);
 
     int ch;
     std::string text;
@@ -118,7 +118,7 @@ int main(int argc, OPTARG_T argv[]) {
                 size_t n;
                 
                 while ((n = fread(buf.data(), 1, buf.size(), stdin)) > 0) {
-                    txt_data.insert(txt_data.end(), buf.begin(), buf.begin() + n);
+                    eml_data.insert(eml_data.end(), buf.begin(), buf.begin() + n);
                 }
             }
                 break;
@@ -132,25 +132,38 @@ int main(int argc, OPTARG_T argv[]) {
         }
     }
         
-    if((!txt_data.size()) && (input_path != NULL)) {
+    if((!eml_data.size()) && (input_path != NULL)) {
         FILE *f = _fopen(input_path, _rb);
         if(f) {
             _fseek(f, 0, SEEK_END);
             size_t len = (size_t)_ftell(f);
             _fseek(f, 0, SEEK_SET);
-            txt_data.resize(len);
-            fread(txt_data.data(), 1, txt_data.size(), f);
+            eml_data.resize(len);
+            fread(eml_data.data(), 1, eml_data.size(), f);
             fclose(f);
         }
     }
     
-    if(!txt_data.size()) {
+    if(!eml_data.size()) {
         usage();
     }
             
     Document document;
-    document.type = "txt";
-    document.text = std::string((const char *)txt_data.data(), txt_data.size());
+    document.type = "eml";
+    
+    g_mime_init();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    document.text = std::string((const char *)eml_data.data(), eml_data.size());
     
     document_to_json(document, text, rawText);
     
@@ -164,5 +177,7 @@ int main(int argc, OPTARG_T argv[]) {
         }
     }
 
+    g_mime_shutdown();
+    
     return 0;
 }
