@@ -32,7 +32,7 @@
     <ProjectGuid>{4331e269-c304-4866-9954-fbe875b0b304}</ProjectGuid>
     <RootNamespace>opcparser</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>txt-parser</ProjectName>
+    <ProjectName>gmime-parser</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -155,7 +155,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>lib\windows64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libcrypto.lib;ws2_32.lib;zlib.lib;plib.lib;mce.lib;opc.lib;libxml2.lib;lzma.lib;libcharset.lib;libiconv.lib;jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
@@ -185,10 +185,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="txt-parser\main.cpp" />
+    <ClCompile Include="gmime-parser\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="txt-parser\txt-parser.h" />
+    <ClInclude Include="txt-parser\gmime-parser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

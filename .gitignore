@@ -1,2 +1,5 @@
 .build/*
-gmime-parser.xcodeproj/project.xcworkspace/xcuserdata/miyako.xcuserdatad/UserInterfaceState.xcuserstate
+.vs/*
+gmime-parser/x64/Release/vc143.pdb
+x64/Release/gmime-parser.pdb
+gmime-parser/x64/Release/*
