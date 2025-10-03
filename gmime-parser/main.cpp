@@ -293,7 +293,7 @@ static void document_to_json(Document& document, std::string& text, bool rawText
     
     if(rawText){
         text  = document.subject;
-        (text.length() != 0) {
+        if(text.length() != 0) {
             text += "\n";
         }
         text += document.body;
