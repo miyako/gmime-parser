@@ -18,36 +18,6 @@
             endingLineNumber = "315"
             landmarkName = "process_document(node, document, tag, mode)"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "FAF2AE15-839A-4EB3-B079-E530ABEA26B9 - b93e8bb276f2dd91"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "process_document(_xmlNode*, Document&amp;, char const*, document_type)"
-                  moduleName = "opc-parser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/miyako/Documents/GitHub/opc-parser/opc-parser/main.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "315"
-                  endingLineNumber = "315">
-               </Location>
-               <Location
-                  uuid = "FAF2AE15-839A-4EB3-B079-E530ABEA26B9 - b93e8bb276f2dd91"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "process_document(_xmlNode*, Document&amp;, char const*, document_type)"
-                  moduleName = "opc-parser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/miyako/Documents/GitHub/opc-parser/opc-parser/main.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "315"
-                  endingLineNumber = "315">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
