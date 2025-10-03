@@ -36,6 +36,7 @@ typedef struct
 #define NOMINMAX
 #define _SSIZE_T_DEFINED 1
 #include <Windows.h>
+#define ssize_t __int64
 #endif
 
 #define BUFLEN 4096
