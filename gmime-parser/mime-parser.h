@@ -16,7 +16,6 @@ struct Document {
     Json::Value headers;
     std::string subject;
     std::string body;
-    std::string from;
 };
 
 #ifdef _WIN32

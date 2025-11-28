@@ -10,7 +10,7 @@
 static void usage(void)
 {
     fprintf(stderr, "Usage:  gmime-parser -r -i in -o out -\n\n");
-    fprintf(stderr, "text extractor for txt documents\n\n");
+    fprintf(stderr, "text extractor for eml documents\n\n");
     fprintf(stderr, " -%c path  : %s\n", 'i' , "document to parse");
     fprintf(stderr, " -%c path  : %s\n", 'o' , "text output (default=stdout)");
     fprintf(stderr, " %c        : %s\n", '-' , "use stdin for input");
@@ -249,8 +249,6 @@ static void processBodyOrAttachment(GMimeObject *parent, GMimeObject *part, mime
 
 static void addToBody(GMimeObject *parent, GMimeObject *part, mime_ctx *ctx) {
     
-//    ctx->name =  "body";
-
     processBodyOrAttachment(parent, part, ctx);
 }
 
@@ -300,8 +298,21 @@ static void document_to_json(Document& document, std::string& text, bool rawText
     }else{
         Json::Value documentNode(Json::objectValue);
         documentNode["type"] = document.type;
-        documentNode["subject"] = document.subject;
-        documentNode["body"] = document.body;
+        documentNode["pages"] = Json::arrayValue;
+        Json::Value metaNode(Json::objectValue);
+        metaNode["subject"] = document.subject;
+        metaNode["from"] = document.headers["from"];
+        metaNode["sender"] = document.headers["sender"];
+        metaNode["bcc"] = document.headers["bcc"];
+        metaNode["cc"] = document.headers["cc"];
+        metaNode["to"] = document.headers["to"];
+        metaNode["replyTo"] = document.headers["replyTo"];
+        documentNode["meta"] = metaNode;
+        Json::Value pageNode(Json::objectValue);
+        Json::Value paragraphNode(Json::objectValue);
+        paragraphNode["text"] = document.body;
+        pageNode["paragraphs"].append(paragraphNode);
+        documentNode["pages"].append(pageNode);
         
         Json::StreamWriterBuilder writer;
         writer["indentation"] = "";
@@ -441,7 +452,14 @@ int main(int argc, OPTARG_T argv[]) {
             {
                 Json::Value json = Json::Value(Json::objectValue);
                 
-//                getAddress(g_mime_message_get_from (message), "from", document.headers);
+                getAddress(g_mime_message_get_from (message), "from", document.headers);
+                getAddress(g_mime_message_get_sender (message), "sender", document.headers);
+                getAddress(g_mime_message_get_reply_to (message), "replyTo", document.headers);
+                getAddress(g_mime_message_get_to (message), "to", document.headers);
+                getAddress(g_mime_message_get_cc (message), "cc", document.headers);
+                getAddress(g_mime_message_get_bcc (message), "bcc", document.headers);
+                
+                //getHeaders(g_mime_message_get_mime_part(message), "headers", document.headers);
                 
                 mime_ctx ctx;
                 ctx.level = 1;
