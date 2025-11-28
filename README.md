@@ -32,7 +32,7 @@ text extractor for eml documents
 |document.meta.cc|0|Object||
 |document.meta.bcc|0|Object||
 |document.meta.replyTo|0|Object||
-|document.meta.subject|0|Object||
+|document.meta.subject|0|Text||
 |document.pages|0|Array||
 |document.pages[].paragraphs|1|Array||
 |document.pages[].paragraphs[].text|2|Text||
